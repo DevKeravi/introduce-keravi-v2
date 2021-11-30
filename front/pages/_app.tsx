@@ -3,17 +3,18 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Row, Col, Container } from "react-bootstrap";
 import Gnb from "../src/components/Gnb";
 import Footer from "../src/components/Footer";
+import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Gnb />
       <Row>
-        <Col lg={12} className="col-xl-8" xl={{ offset: 2 }}>
-          <Component {...pageProps} />
-        </Col>
+        <Component {...pageProps} />
       </Row>
-      <Footer />
+      <Row style={{ backgroundColor: "#cbbeb5" }}>
+        <Footer />
+      </Row>
     </>
   );
 }

@@ -2,8 +2,14 @@ import { Col, Row } from "react-bootstrap";
 import { AntDesignOutlined } from "@ant-design/icons";
 export interface TitleProps {
   title: string;
+  color?: string;
+  lineColor?: string;
 }
-const CardTitle = ({ title }: TitleProps) => {
+const CardTitle = ({
+  title,
+  color = "#528c84",
+  lineColor = "grey",
+}: TitleProps) => {
   return (
     <Row
       style={{ textAlign: "center", marginTop: "3rem", marginBottom: "3rem" }}
@@ -13,12 +19,12 @@ const CardTitle = ({ title }: TitleProps) => {
           style={{
             display: "inline-block",
             borderBottom: "1px solid",
-            borderBottomColor: "grey",
+            borderBottomColor: `${lineColor}`,
           }}
         >
           <h1
             className="display-3"
-            style={{ fontWeight: "bold", color: "#528c84" }}
+            style={{ fontWeight: "bold", color: `${color}` }}
           >
             {title}
           </h1>
