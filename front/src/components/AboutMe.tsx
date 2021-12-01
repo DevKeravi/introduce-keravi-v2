@@ -25,7 +25,7 @@ const AboutMe = () => {
       <CardTitle title="ABOUT ME" />
       <Row>
         {cardProps.map((v: AboutCardProps) => (
-          <Col lg={4} md={6} xs={12} key={v.title}>
+          <Col xxl={4} md={6} xs={12} key={v.title}>
             <AboutCard {...v} />
           </Col>
         ))}

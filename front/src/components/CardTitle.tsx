@@ -12,7 +12,7 @@ const CardTitle = ({
 }: TitleProps) => {
   return (
     <Row
-      style={{ textAlign: "center", marginTop: "3rem", marginBottom: "3rem" }}
+      style={{ textAlign: "center", marginTop: "5rem", marginBottom: "5rem" }}
     >
       <Col>
         <div

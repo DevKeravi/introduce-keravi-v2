@@ -35,7 +35,7 @@ const Skills = () => {
   return (
     <Container fluid>
       <Row>
-        <Col style={{ marginTop: "2rem", marginBottom: "2rem" }}>
+        <Col>
           <CardTitle title="SKILLS" color="#525266" />
         </Col>
       </Row>

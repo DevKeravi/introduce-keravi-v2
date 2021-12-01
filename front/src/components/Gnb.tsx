@@ -70,16 +70,19 @@ const ButtonWrapper = styled(Button)`
 
 const Gnb = () => {
   const [gnbColor, setGnbColor] = useState("transparent");
-  const [gnbFontColor, setGnbFontColor] = useState("lightgrey");
+  const [gnbFontColor, setGnbFontColor] = useState("white");
+  const [shadow, setShadow] = useState("");
 
   useEffect(() => {
     const onScroll = () => {
       if (window.scrollY > 100) {
         setGnbColor("white");
         setGnbFontColor("black");
+        setShadow("5px 3px 40px -15px grey");
       } else {
         setGnbColor("transparent");
-        setGnbFontColor("lightgrey");
+        setGnbFontColor("white");
+        setShadow("");
       }
     };
     window.addEventListener("scroll", onScroll);
@@ -97,38 +100,56 @@ const Gnb = () => {
     <BackgroundContainer fluid>
       <Navbar
         collapseOnSelect
-        expand="lg"
-        style={{ background: `${gnbColor}` }}
-        sticky="top"
+        expand="xl"
+        style={{
+          background: `${gnbColor}`,
+          boxShadow: `${shadow}`,
+        }}
+        fixed="top"
       >
         <Container fluid>
-          <Navbar.Brand style={{ color: `${gnbFontColor}` }} href="#home">
+          <Navbar.Brand style={{ color: `${gnbFontColor}` }} href="#">
             Keravi's Portfolio
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto"></Nav>
             <Nav>
-              <Nav.Link style={{ color: `${gnbFontColor}` }} href="#about">
+              <Nav.Link
+                style={{ color: `${gnbFontColor}`, fontSize: "1.2rem" }}
+                href="#about"
+              >
                 About me
               </Nav.Link>
-              <Nav.Link style={{ color: `${gnbFontColor}` }} href="#skills">
+              <Nav.Link
+                style={{ color: `${gnbFontColor}`, fontSize: "1.2rem" }}
+                href="#skills"
+              >
                 Skills
               </Nav.Link>
-              <Nav.Link style={{ color: `${gnbFontColor}` }} href="#archiving">
+              <Nav.Link
+                style={{ color: `${gnbFontColor}`, fontSize: "1.2rem" }}
+                href="#archiving"
+              >
                 Archiving
               </Nav.Link>
-              <Nav.Link style={{ color: `${gnbFontColor}` }} href="#projects">
+              <Nav.Link
+                style={{ color: `${gnbFontColor}`, fontSize: "1.2rem" }}
+                href="#projects"
+              >
                 Projects
               </Nav.Link>
-              <Nav.Link style={{ color: `${gnbFontColor}` }} href="#contact">
+              <Nav.Link
+                style={{ color: `${gnbFontColor}`, fontSize: "1.2rem" }}
+                href="#contact"
+              >
                 Contact
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <Row style={{ textAlign: "center", marginTop: "3rem" }}>
+      <Row style={{ textAlign: "center", marginTop: "5rem" }}>
         <Col>
           <TitleDiv className="display-3">채성렬</TitleDiv>
           <TitleDiv className="display-3">웹 개발자 포트폴리오</TitleDiv>

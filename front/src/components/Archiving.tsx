@@ -30,7 +30,7 @@ const cardProps: ArchivingCardProp[] = [
 const Archiving = () => {
   return (
     <Container style={{ paddingBottom: "7rem" }}>
-      <Row style={{ marginBottom: "2rem", marginTop: "2rem" }}>
+      <Row>
         <Col>
           <CardTitle title="ARCHIVING" color="#ffe5a9" />
         </Col>

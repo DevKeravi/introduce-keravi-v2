@@ -8,13 +8,19 @@ import "../styles/globals.css";
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <Gnb />
-      <Row>
-        <Component {...pageProps} />
-      </Row>
-      <Row style={{ backgroundColor: "#cbbeb5" }}>
-        <Footer />
-      </Row>
+      <Container fluid>
+        <Col>
+          <Row>
+            <Gnb />
+          </Row>
+          <Row>
+            <Component {...pageProps} />
+          </Row>
+          <Row style={{ backgroundColor: "#cbbeb5" }}>
+            <Footer />
+          </Row>
+        </Col>
+      </Container>
     </>
   );
 }
