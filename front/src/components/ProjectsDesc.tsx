@@ -20,20 +20,24 @@ const ProjectsDesc = (prop: IProjectsDesc[]) => {
 
   const createDesc = useCallback((v: IProjectsDesc[]) => {
     var desc: any[] = [];
-    v.map((v: IProjectsDesc) => {
+    v.map((v: IProjectsDesc, i: number) => {
       if (v.bold) {
         desc.push(
-          <span>
+          <span key={i}>
             <strong>{v.value}</strong>
           </span>
         );
       } else if (v.color) {
-        desc.push(<span style={{ color: `${v.color}` }}>{v.value}</span>);
+        desc.push(
+          <span key={i} style={{ color: `${v.color}` }}>
+            {v.value}
+          </span>
+        );
       } else if (v.nextLine) {
         desc.push(<br />);
         desc.push(<br />);
       } else {
-        desc.push(<span>{v.value}</span>);
+        desc.push(<span key={i}>{v.value}</span>);
       }
     });
     return desc;

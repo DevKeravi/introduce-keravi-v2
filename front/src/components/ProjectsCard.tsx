@@ -37,10 +37,10 @@ const ProjectsCard = (prop: ProjectsCardProps) => {
         <Col>{prop.subTitle}</Col>
       </Row>
       <Row className="g-5">
-        <Col xl={6} lg={12}>
+        <Col xxl={6} sm={12}>
           <ProjectsImages {...prop.images} />
         </Col>
-        <Col xl={6} lg={12}>
+        <Col xxl={6} sm={12}>
           <Row>
             <ProjectsDesc {...prop.desc} />
           </Row>

@@ -109,7 +109,7 @@ const Gnb = () => {
       >
         <Container fluid>
           <Navbar.Brand style={{ color: `${gnbFontColor}` }} href="#">
-            Keravi's Portfolio
+            Keravi Portfolio
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">

@@ -36,7 +36,7 @@ const ProjectsImages = (prop: IProjectsImage[]) => {
     if (modalBody.current !== null) {
       modalBody.current.scrollTop = 0;
     }
-  }, [curIndex, modalBody]);
+  }, [curIndex, modalBody, prop]);
 
   const handleNext = useCallback(() => {
     if (curIndex + 1 < Object.keys(prop).length) {

@@ -5,10 +5,22 @@ import Gnb from "../src/components/Gnb";
 import Footer from "../src/components/Footer";
 import "../styles/globals.css";
 import FooterCarousel from "../src/components/FooterCarousel";
+import Head from "next/head";
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const desc = "프론트엔드 개발자 채성렬의 포트폴리오입니다.";
   return (
     <>
+      <Head>
+        <meta charSet="utf-8" />
+        <title>Keravi Portfolio</title>
+        <meta name="description" content={desc} />
+        <meta property="og:title" content="채성렬의 포트폴리오" />
+
+        <meta property="og:description" content={desc} />
+        <meta property="og:image" content="/myphoto.jpg" />
+        <meta property="og:url" content={"http://devkeravi.site"} />
+      </Head>
       <Container fluid>
         <Col>
           <Row>

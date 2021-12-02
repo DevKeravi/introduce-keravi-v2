@@ -399,25 +399,25 @@ export const IntroduceTwo: ProjectsCardProps = {
 
 export const GameCardProps: GameCardProp[] = [
   {
-    title: "별의 커비",
+    title: "별의 커비 ( C++ )",
     imageUrl: "/game/kirby.png",
     desc: "Window API 를 이용하여 만든 별의 커비 모작입니다. 작업기간은 12일 소요되었으며 1인 작업물 입니다.",
     footer: "https://www.youtube.com/watch?v=nL6MzJg9ZfQ",
   },
   {
-    title: "슬레이 더 스파이어",
+    title: "슬레이 더 스파이어 ( C++ )",
     imageUrl: "/game/slay.jpg",
     desc: "Cocos2dx 를 이용하여 만든 Slay the Spire 모작입니다. 작업기간은 7일 소요되었으며 3인 팀으로 제작되었습니다. ( 우수포트폴리오 수상작 )",
     footer: "https://www.youtube.com/watch?v=dfBMEfIsmc8&t=1s",
   },
   {
-    title: "몬스터 헌터",
+    title: "몬스터 헌터 ( C++ )",
     imageUrl: "/game/monster.jpg",
     desc: "DirectX 를 이용하여 만든 몬스터 헌터 모작입니다. 작업기간은 21일 소요되었으며 3인 팀으로 제작되었습니다.",
     footer: "https://www.youtube.com/watch?v=PfDJAFqLdfs",
   },
   {
-    title: "포탈",
+    title: "포탈 ( C# )",
     imageUrl: "/game/portal.jpg",
     desc: "Unity Engine 를 이용하여 만든 포탈 모작입니다. 작업기간은 한달 소요되었으며 2인 팀으로 제작되었습니다.",
     footer: "https://www.youtube.com/watch?v=IAM2nbftdw0&t=1s",
