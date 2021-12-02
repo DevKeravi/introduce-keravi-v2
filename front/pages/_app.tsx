@@ -4,6 +4,7 @@ import { Row, Col, Container } from "react-bootstrap";
 import Gnb from "../src/components/Gnb";
 import Footer from "../src/components/Footer";
 import "../styles/globals.css";
+import FooterCarousel from "../src/components/FooterCarousel";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -16,7 +17,12 @@ function MyApp({ Component, pageProps }: AppProps) {
           <Row>
             <Component {...pageProps} />
           </Row>
-          <Row style={{ backgroundColor: "#cbbeb5" }}>
+          <Row>
+            <Col className="col-xl-8 col-xs-12" xl={{ offset: 2 }}>
+              <FooterCarousel />
+            </Col>
+          </Row>
+          <Row style={{ backgroundColor: "#423f3b" }}>
             <Footer />
           </Row>
         </Col>

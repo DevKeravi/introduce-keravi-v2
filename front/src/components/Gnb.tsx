@@ -141,9 +141,9 @@ const Gnb = () => {
               </Nav.Link>
               <Nav.Link
                 style={{ color: `${gnbFontColor}`, fontSize: "1.2rem" }}
-                href="#contact"
+                href="#closing"
               >
-                Contact
+                Closing
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

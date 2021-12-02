@@ -19,7 +19,7 @@ const ProjectsCard = (prop: ProjectsCardProps) => {
         borderRadius: "10px 10px 10px 10px",
         padding: "3rem",
         boxShadow: " 5px 3px 40px -15px black",
-        marginBottom: "5rem",
+        marginBottom: "3rem",
       }}
     >
       <Row

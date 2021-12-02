@@ -4,7 +4,7 @@ import AboutMe from "../src/components/AboutMe";
 import Skills from "../src/components/Skills";
 import Archiving from "../src/components/Archiving";
 import Projects from "../src/components/Projects";
-import Contact from "../src/components/Contact";
+import Greetings from "../src/components/Greetings";
 
 const Home: NextPage = () => {
   return (
@@ -37,9 +37,9 @@ const Home: NextPage = () => {
           <Projects />
         </Col>
       </Row>
-      <Row id="contact">
+      <Row id="closing">
         <Col lg={12} className="col-xl-8" xl={{ offset: 2 }}>
-          <Contact />
+          <Greetings />
         </Col>
       </Row>
     </Container>
