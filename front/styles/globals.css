@@ -8,9 +8,13 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 ::-webkit-scrollbar {
+  width: 0px;
   display: none;
+  -webkit-appearance: none;
 }
 
 a {

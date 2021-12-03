@@ -149,24 +149,26 @@ const Gnb = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <Row style={{ textAlign: "center", marginTop: "5rem" }}>
-        <Col>
-          <TitleDiv className="display-3">채성렬</TitleDiv>
-          <TitleDiv className="display-3">웹 개발자 포트폴리오</TitleDiv>
-          <BoxDiv></BoxDiv>
-          <DescDiv>안녕하세요</DescDiv>
-          <DescDiv>공부와 논의를 좋아하는 프론트엔드 개발자입니다.</DescDiv>
-          <DescDiv>
-            학습을 위한 열정과, 주도적으로 일을 수행하는게 저의 장점입니다.
-          </DescDiv>
-          <ButtonWrapper
-            style={{ marginTop: "2rem", fontSize: "1.3rem" }}
-            onClick={handleMore}
-          >
-            더 알아보기
-          </ButtonWrapper>
-        </Col>
-      </Row>
+      <Container>
+        <Row style={{ textAlign: "center", marginTop: "5rem" }}>
+          <Col style={{ padding: "1rem" }}>
+            <TitleDiv className="display-3">채성렬</TitleDiv>
+            <TitleDiv className="display-3">웹 개발자 포트폴리오</TitleDiv>
+            <BoxDiv></BoxDiv>
+            <DescDiv>안녕하세요</DescDiv>
+            <DescDiv>공부와 논의를 좋아하는 프론트엔드 개발자입니다.</DescDiv>
+            <DescDiv>
+              학습을 위한 열정과, 주도적으로 일을 수행하는게 저의 장점입니다.
+            </DescDiv>
+            <ButtonWrapper
+              style={{ marginTop: "2rem", fontSize: "1.3rem" }}
+              onClick={handleMore}
+            >
+              더 알아보기
+            </ButtonWrapper>
+          </Col>
+        </Row>
+      </Container>
       <ShapedDiv>
         <svg
           data-name="Layer 1"

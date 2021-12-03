@@ -34,7 +34,7 @@ const ArchivingCard = (prop: ArchivingCardProp) => {
               src={prop.titleIcon}
               alt={prop.title}
             />
-            <span style={{ fontSize: "1.7rem", marginLeft: "1rem" }}>
+            <span style={{ fontSize: "1.2rem", marginLeft: "1rem" }}>
               <strong>{prop.title}</strong>
             </span>
           </div>
