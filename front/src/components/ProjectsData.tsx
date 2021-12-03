@@ -65,7 +65,7 @@ export const HazyShade: ProjectsCardProps = {
       subject: "소개 영상",
       desc: "클릭시 유튜브로 이동합니다.",
       isLink: true,
-      url: "https://github.com/DevKeravi/next-cosmetic-shop",
+      url: "https://www.youtube.com/watch?v=9Tr7zhpaOvU&t=65s",
     },
     {
       subject: "Front-end",
@@ -155,14 +155,26 @@ export const GoBird: ProjectsCardProps = {
     { value: "Next.js 와 Express 기반의 풀스택", color: "red" },
     {
       value:
-        "을 잘 알게 되어 좋았는데, 기존에 사용하던 Golang 서버와 MongoDB를 떠나, Node Express, MySql를 체계적으로 사용해보는 기회가 되었습니다.",
+        "을 잘 알게 되어 좋았는데, 기존에 사용하던 Golang 서버와 MongoDB를 떠나, ",
     },
+    { value: "Node Express, MySql", bold: true },
+    { value: " 를 체계적으로 사용해보는 기회가 되었습니다." },
     { nextLine: true },
     { value: "AWS의 서비스", color: "red" },
     {
-      value:
-        "들을 이용해보았는데, 그 중 EC2, S3를 사용한 배포는 클라우드 서비스를 많이 이용하는 요즘 배포환경에 있어, 많은 도움이 되었고 Lambda로 S3 이미지를 썸네일과 원본으로 포팅하는 기능, 도메인 연결과 CORS 문제 , NginX를 이용한 Https 서비스 등 실제 필요한 기술을 많이 공부하였습니다.",
+      value: "들을 이용해보았는데, ",
     },
+    { value: "EC2, S3", bold: true },
+    {
+      value:
+        "를 사용한 배포는 클라우드 서비스를 많이 이용하는 요즘 배포환경에 있어, 많은 도움이 되었고 그 중 ",
+    },
+    { value: "Lambda", bold: true },
+    {
+      value:
+        "로 S3 이미지를 썸네일과 원본으로 포팅하는 기능, 도메인 연결과 CORS 문제 , NginX를 이용한 Https 서비스 등 실제 필요한 기술을 많이 공부하였습니다.",
+    },
+
     { nextLine: true },
     { value: "마지막으로, " },
     { value: "Ant-Design", color: "red" },

@@ -11,6 +11,9 @@ import styled from "styled-components";
 
 const ScrollTopWrapper = styled.a`
   :hover {
+    color: black;
+  }
+  :not(:hover) {
     color: inherit;
   }
 `;
