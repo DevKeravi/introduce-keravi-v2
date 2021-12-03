@@ -38,8 +38,9 @@ const Home: NextPage = () => {
           style={{
             fontSize: "3rem",
             position: "fixed",
-            bottom: "30px",
-            right: "30px",
+            bottom: "1.5rem",
+            right: "1.5rem",
+            color: "#00000059",
             display: `${scrollTop}`,
           }}
         />
