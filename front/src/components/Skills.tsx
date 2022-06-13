@@ -1,33 +1,33 @@
-import CardTitle from "./CardTitle";
-import { Container, Row, Col } from "react-bootstrap";
-import { SkillCardProps } from "./SkillCard";
-import SkillCard from "./SkillCard";
+import CardTitle from './CardTitle';
+import { Container, Row, Col } from 'react-bootstrap';
+import { SkillCardProps } from './SkillCard';
+import SkillCard from './SkillCard';
 
 const cardProps: SkillCardProps[] = [
   {
-    title: "FrontEnd",
-    src: "/frontend.jpg",
-    alt: "frontend",
+    title: 'FrontEnd',
+    src: '/frontend.jpg',
+    alt: 'frontend',
   },
   {
-    title: "BackEnd",
-    src: "/back.jpg",
-    alt: "backend",
+    title: 'BackEnd',
+    src: '/back.jpg',
+    alt: 'backend',
   },
   {
-    title: "Development",
-    src: "/development.jpg",
-    alt: "delvelopment",
+    title: 'Develop',
+    src: '/development.jpg',
+    alt: 'delvelopment',
   },
   {
-    title: "Game",
-    src: "/game.jpg",
-    alt: "game",
+    title: 'Game',
+    src: '/game.jpg',
+    alt: 'game',
   },
   {
-    title: "Version Tools",
-    src: "/svn.jpg",
-    alt: "version tools",
+    title: 'Version Tools',
+    src: '/svn.jpg',
+    alt: 'version tools',
   },
 ];
 
@@ -52,7 +52,7 @@ const Skills = () => {
         <Col lg={4} xs={12}>
           <SkillCard {...cardProps[2]} />
         </Col>
-        <Col lg={4} xs={12} style={{ marginBottom: "8rem" }}>
+        <Col lg={4} xs={12} style={{ marginBottom: '8rem' }}>
           <SkillCard {...cardProps[4]} />
         </Col>
       </Row>
